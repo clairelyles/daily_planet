@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Daily Planet</title>
+</head>
+<body>
+<h1>Welcome to The Daily Planet</h1>
+<h2>List of Articles:</h2>
+<ul>
+	<% for (var i = 0; i < articles.length; i++) { %>
+		<li><a href='/articles/<%= i %>'><%= articles[i].title %></a></li>
+	<% } %>
+</ul>
+
+<h2>Post an Article:</h2>
+<a href='/articles/new'><input type='submit' value='Post'></a>	
+</body>
+</html>
